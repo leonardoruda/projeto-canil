@@ -11,4 +11,4 @@ Projeto realizado com as tecnologias Typescript, NodeJS, Express e Mustache
 `npm install`
 
 ### Para rodar o projeto:
-`npm run start`
+`npm run start-dev`
