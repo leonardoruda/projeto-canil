@@ -7,9 +7,10 @@
     "node": "14.x"
   },
   "scripts": {
+    "tsc": "tsc",
     "start": "node dist/server.js",
     "build": "tsc",
-    "postinstall": "tsc && copyfiles -u 1 src/**/*.mustache dist/",
+    "postinstall": "npm run tsc && copyfiles -u 1 src/**/*.mustache dist/",
     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
   "repository": {
