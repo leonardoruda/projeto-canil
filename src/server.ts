@@ -7,7 +7,8 @@ require('dotenv').config();
 const server = express();
 
 server.set('view engine', 'mustache');
-server.set('views', path.join(__dirname + '/views'));
+server.set('views', path.join(__dirname, '/views'));
+
 
 server.engine('mustache', mustache());
 
@@ -20,5 +21,7 @@ server.use((req, res) => {
 })
 
 server.listen(process.env.PORT || 3333, () => {
-    console.log('HTTP server running')
+    console.log('HTTP server running');
+    console.log(__dirname);
+    console.log(path.join(__dirname, '/views'));
   });
