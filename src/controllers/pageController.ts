@@ -5,7 +5,7 @@ import { petFunctions } from '../models/Pet';
 export const home = (req: Request, res: Response) => {
     let list = petFunctions.getAll;
 
-    res.render('pages/page.mustache', {
+    res.render('partials/header', {
         menu: menuActive('all'),
         banner: {
             title: 'Todos os animais',
