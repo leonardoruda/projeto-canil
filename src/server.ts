@@ -1,5 +1,4 @@
 import express from 'express';
-import mustache from 'mustache-express';
 import path from 'path';
 import routes from './routes/index';
 require('dotenv').config();
@@ -7,17 +6,12 @@ require('dotenv').config();
 const server = express();
 let viewsPath = path.join(__dirname, 'views');
 
-server.engine('mustache', mustache());
-server.set('view engine', 'mustache');
+server.set('view engine', 'ejs');
 server.set('views', viewsPath);
 
 server.use(express.static(path.join(__dirname, '../public')));
 
 server.use(routes);
-
-server.use((req, res) => {
-    res.render('pages/404');
-})
 
 server.listen(process.env.PORT || 3333, () => {
     console.log('HTTP server running');
