@@ -1,5 +1,5 @@
 # PetDevShop
-Projeto realizado com as tecnologias Typescript, NodeJS, Express e Mustache
+Projeto realizado com as tecnologias Typescript, NodeJS, Express e EJS
 
 ### Pré-requisitos globais:
 `npm i -g nodemon typescript ts-node`
