@@ -12,3 +12,6 @@ Projeto realizado com as tecnologias Typescript, NodeJS, Express e EJS
 
 ### Para rodar o projeto:
 `npm run start-dev` em dependência de desenvolvimento, ou `npm run start` em dependência de produção
+
+#
+Disponível em https://projeto-canil-production.up.railway.app/
